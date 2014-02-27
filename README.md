@@ -6,7 +6,7 @@ By [Andrew Thul](https://github.com/adthul)
 
 ## Description
 
-**Anagramateur** is a very basic rails API. It roots to a single controller action that takes in 2 words(specified in the URL) and returns a json object of the 2 words used, and whether or not they are anagrams. enjoy!
+**Anagramateur** is a very basic rails API. It routes to 1 of 2 controller actions. One that takes in 2 words(specified in the URL) and returns a json object of the 2 words used, and whether or not they are anagrams. The other that takes in 1 word and returns a json object with the word used and whether or not it is a palindrome. enjoy!
 
 ## Installation
 
@@ -29,10 +29,15 @@ Open a local server:
 rails s
 ```
 
-Enter your words into your local host url in the following format:
+To determine if 2 words are anagrams enter your words into your local host url in the following format:
 
 ```console
-localhost:3000/?word1=*your_word*&word2=*your_other_word*
+localhost:3000/anagram/*your 1st word*&*your 2nd word*
+```
+
+To find if a word is a palindrome enter in this format:
+```console
+localhost:3000/palindrome/*your word*
 ```
 
 
@@ -41,6 +46,7 @@ localhost:3000/?word1=*your_word*&word2=*your_other_word*
 * Miles Starkenburg
 * John Jenson
 * Lillian Ng
+* John Jensen
 
 
 ## Contributing
